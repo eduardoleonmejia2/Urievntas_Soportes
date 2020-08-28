@@ -1,0 +1,17 @@
+{
+  "name": "crud-electron-mysql",
+  "version": "1.0.0",
+  "description": "crud electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.2.1"
+  },
+  "dependencies": {
+    "electron-reload": "^1.5.0"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SOPORTES URIVENTAS</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <meta http-equiv="Content-Security-Policy" content="script-src  'self' 'unsafe-inline';" /> 
+</head>
+  <body class="bg-light">
+    <div class="row" >
+      <div class="col-md-5">
+
+        <div class="card border-dark p-2 m-3" id="formulario">
+          EGRESOS
+          <input id="egresos" placeholder="EGRESOS" class="form-control mb-2" type="file"/>
+          INGRESOS
+          <input id="ingresos" placeholder="INGRESOS" class="form-control mb-2" type="file"/>
+          FECHA
+          <input id="fecha" placeholder="FECHA" class="form-control mb-2" type="date"/>
+          <button class="btn btn-dark" onclick="guardar()"> GUARDAR </button>
+        </div>
+
+      </div> <!-- fin de la columna 1 -->
+
+    <div class="col-md-6">
+      <table class="table table-striped table-dark m-3">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">EGRESOS</th>
+            <th scope="col">INGRESOS</th>
+            <th scope="col">FECHA</th>
+          </tr>
+        </thead>
+        <tbody  id="tabla"> </tbody>
+
+   </div>  <!-- fin de la columna 2 --> 
+  </div>  <!-- fin de row --> 
+ </body>
+      <script  src="app/app.js"></script>  
+</html>
